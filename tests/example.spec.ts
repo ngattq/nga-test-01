@@ -10,9 +10,9 @@ test('has title', async ({ page }) => {
 test('get started link', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
-  // Click the get started link.
+  // Click the get started link. update comment
   await page.getByRole('link', { name: 'Community' }).click();
 
   // Expects page to have a heading with the name of Installation.
-  await expect(page.getByRole('heading', { name: 'Welcome' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Welcome_Update' })).toBeVisible();
 });
